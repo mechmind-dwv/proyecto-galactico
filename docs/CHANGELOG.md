@@ -109,7 +109,7 @@ npm run migrate
 
 <div align="center">
 
-**ÚLTIMA ACTUALIZACIÓN: [FECHA]**
+**ÚLTIMA ACTUALIZACIÓN: [2025/12/16]**
 
 [![Epic Updates](https://img.shields.io/badge/Updates-Galactic_Scale-9b59b6?style=for-the-badge&logo=rocket)]()
 
