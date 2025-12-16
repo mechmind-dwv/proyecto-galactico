@@ -1,0 +1,42 @@
+# .github/workflows/deploy.yml
+name: Deploy Galáctico
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+
+  deploy-staging:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          echo "Deploying to staging..."
+          # Tu comando de deploy a staging
+          ./deploy.sh staging
+
+  deploy-prod:
+    needs: deploy-staging
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          echo "🚀 Deploying to PRODUCTION!"
+          # Confirmación manual o automática
+          ./deploy.sh production
