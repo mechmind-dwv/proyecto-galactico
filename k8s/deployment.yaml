@@ -1,0 +1,36 @@
+# k8s/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: proyecto-galactico
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: galactico
+  template:
+    metadata:
+      labels:
+        app: galactico
+    spec:
+      containers:
+      - name: app
+        image: tu-usuario/proyecto-galactico:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: NODE_ENV
+          value: "production"
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 3000
+          initialDelaySeconds: 30
+          periodSeconds: 10
