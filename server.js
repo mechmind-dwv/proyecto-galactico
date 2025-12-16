@@ -1,15 +1,10 @@
-// server.js
-import https from 'https';
-import fs from 'fs';
-import app from './app';
+import app from './app.js';
 
-const options = {
-  key: fs.readFileSync('/path/to/privkey.pem'),
-  cert: fs.readFileSync('/path/to/fullchain.pem'),
-  // HSTS
-  strictTransportSecurity: 'max-age=31536000; includeSubDomains',
-  // Seguridad adicional
-  ciphers: 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384'
-};
+const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || '0.0.0.0';
 
-https.createServer(options, app).listen(443);
+app.listen(PORT, HOST, () => {
+  console.log(`🚀 Servidor corriendo en http://${HOST}:${PORT}`);
+  console.log(`📡 Ambiente: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`🎯 Health check: http://${HOST}:${PORT}/health`);
+});

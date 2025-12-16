@@ -1,5 +1,12 @@
-// routes/health.js
-router.get('/health', (req, res) => {
+import express from 'express';
+const router = express.Router();
+
+// Funciones de chequeo simuladas (arregla estas según tu setup real)
+const checkDatabase = () => true; // Implementa tu lógica de DB
+const checkRedis = () => true;    // Implementa tu lógica de Redis
+const checkExternalAPI = () => true; // Implementa tu lógica de API
+
+router.get('/', (req, res) => {
   const healthcheck = {
     uptime: process.uptime(),
     message: 'OK',
@@ -15,3 +22,5 @@ router.get('/health', (req, res) => {
   
   res.status(isHealthy ? 200 : 503).json(healthcheck);
 });
+
+export default router;

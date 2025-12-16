@@ -1,5 +1,11 @@
-// middleware/security.js
-app.use(helmet({
+import helmet from 'helmet';
+import rateLimit from 'express-rate-limit';
+import express from 'express';
+
+const router = express.Router();
+
+// Helmet middleware
+router.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
@@ -12,8 +18,10 @@ app.use(helmet({
 }));
 
 // Rate limiting
-app.use(rateLimit({
+router.use(rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutos
   max: 100, // límite por IP
   message: 'Demasiadas peticiones desde esta IP'
 }));
+
+export default router;
