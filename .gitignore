@@ -22,3 +22,23 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+logs/
+error.log
+combined.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
