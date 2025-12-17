@@ -1,10 +1,5 @@
 import express from 'express';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import apiRoutes from './routes/api.js';
 
 const app = express();
 
@@ -15,55 +10,55 @@ app.use(express.urlencoded({ extended: true }));
 // CORS
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
 
-// Cargar middlewares dinámicamente si existen
-const middlewarePath = path.join(__dirname, 'middleware');
-if (fs.existsSync(middlewarePath)) {
-  const middlewareFiles = fs.readdirSync(middlewarePath).filter(file => file.endsWith('.js'));
-  for (const file of middlewareFiles) {
-    const middleware = await import(`./middleware/${file}`);
-    if (middleware.default) app.use(middleware.default);
-  }
-}
-
-// Cargar rutas dinámicamente si existen
-const routesPath = path.join(__dirname, 'routes');
-if (fs.existsSync(routesPath)) {
-  const routeFiles = fs.readdirSync(routesPath).filter(file => file.endsWith('.js'));
-  for (const file of routeFiles) {
-    const route = await import(`./routes/${file}`);
-    const routeName = file.replace('.js', '');
-    if (route.default) app.use(`/${routeName}`, route.default);
-  }
-}
-
-// Ruta de prueba
+// Ruta principal
 app.get('/', (req, res) => {
   res.json({
     status: 'online',
     message: '🚀 Proyecto Galáctico está VIVO! 🚀',
     environment: process.env.NODE_ENV || 'development',
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
+    endpoints: {
+      api: '/api',
+      health: '/health',
+      docs: 'Ver /api para documentación completa'
+    }
   });
 });
 
-// Ruta de health check
+// Health check básico
 app.get('/health', (req, res) => {
-  res.json({ status: 'healthy', uptime: process.uptime() });
+  res.json({
+    status: 'healthy',
+    uptime: process.uptime(),
+    timestamp: Date.now(),
+    memory: process.memoryUsage()
+  });
 });
 
-// Manejo de errores 404
+// API Routes
+app.use('/api', apiRoutes);
+
+// 404 handler
 app.use((req, res) => {
-  res.status(404).json({ error: 'Ruta no encontrada' });
+  res.status(404).json({ 
+    success: false,
+    error: 'Ruta no encontrada',
+    availableEndpoints: ['/api', '/health']
+  });
 });
 
-// Manejo de errores general
+// Error handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).json({ error: 'Error interno del servidor' });
+  res.status(500).json({ 
+    success: false,
+    error: 'Error interno del servidor' 
+  });
 });
 
 export default app;
