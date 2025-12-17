@@ -1,16 +1,24 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon",
+    "start": "node server.js",
+    "dev": "NODE_ENV=development nodemon server.js",
     "staging": "NODE_ENV=staging node server.js",
     "prod": "NODE_ENV=production node server.js",
-    "deploy:staging": "cp .env.staging .env && npm run staging",
-    "deploy:prod": "cp .env.production .env && npm run prod"
+    "easy-mode": "npm run dev",
+    "warrior-mode": "NODE_ENV=staging node server.js",
+    "god-mode": "NODE_ENV=production node --max-old-space-size=4096 server.js",
+    "setup": "./setup-wizard.sh",
+    "quick-dev": "./quick-dev.sh"
   },
   "dependencies": {
-    "express": "^5.2.1",
-    "express-rate-limit": "^8.2.1",
-    "helmet": "^8.1.0",
-    "winston": "^3.19.0"
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
