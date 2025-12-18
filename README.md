@@ -169,8 +169,9 @@ Este proyecto está bajo la licencia MIT - mira el archivo [LICENSE](LICENSE) pa
 <div align="center">
 
 ## 🌟 **¡DALE UNA ESTRELLA SI TE VOLÓ LA MENTE!** 🌟
+### Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mechmind-dwv/proyecto-galactico&type=Date)](https://star-history.com/#mechmind-dwv/proyecto-galactico&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mechmind-dwv/proyecto-galactico&type=date&legend=bottom-right)](https://www.star-history.com/#mechmind-dwv/proyecto-galactico&type=date&legend=bottom-right)
 
 ### 💖 **Hecho con amor, café, y pura magia** ✨
 
