@@ -1,9 +1,9 @@
 # 🚀 PROYECTO GALÁCTICO 🚀
 *La revolución del código ha comenzado* ⚡
 
-[![Epic Level](https://img.shields.io/badge/Epic%20Level-9000%2B-ff6b6b?style=for-the-badge&logo=rocket)](https://github.com/tu-repo)
-[![Powered by Magic](https://img.shields.io/badge/Powered%20by-Pure%20Magic-9b59b6?style=for-the-badge&logo=sparkles)](https://github.com/tu-repo)
-[![AI Overlord Approved](https://img.shields.io/badge/AI%20Overlord-Approved-00d2d3?style=for-the-badge&logo=robot)](https://github.com/tu-repo)
+[![Epic Level](https://img.shields.io/badge/Epic%20Level-9000%2B-ff6b6b?style=for-the-badge&logo=rocket)](https://github.com/mechmin-dwv/proyecto-galactico)
+[![Powered by Magic](https://img.shields.io/badge/Powered%20by-Pure%20Magic-9b59b6?style=for-the-badge&logo=sparkles)](https://github.com/mechmin-dwv/proyecto-galactico)
+[![AI Overlord Approved](https://img.shields.io/badge/AI%20Overlord-Approved-00d2d3?style=for-the-badge&logo=robot)](https://github.com/mechmin-dwv/proyecto-galactico)
 
 ---
 
@@ -141,7 +141,7 @@ npm run god-mode --unleash-chaos
 
 ¿Encontraste un bug? ¿Tienes una idea que cambiaría el mundo?
 
-- 🐛 **Issues**: [Reporta bugs aquí](https://github.com/tu-repo/issues)
+- 🐛 **Issues**: [Reporta bugs aquí](https://github.com/mechmin-dwv/proyecto-galactico/issues)
 - 💡 **Ideas**: [Comparte tu genialidad](https://github.com/mechmin-dwv/proyecto-galactico/discussions)
 - 📧 **Email**: desarrollo.galactico@universo.com
 - 🐦 **Twitter**: [@ProyectoGalactico](https://twitter.com/ejemplo)
@@ -176,9 +176,9 @@ Este proyecto está bajo la licencia MIT - mira el archivo [LICENSE](LICENSE) pa
 
 **¿Te gustó este proyecto? ¡Compártelo con el mundo!**
 
-[![GitHub](https://img.shields.io/badge/GitHub-Síguenos-black?style=for-the-badge&logo=github)](https://github.com/mwchmind-dwv)
+[![GitHub](https://img.shields.io/badge/GitHub-Síguenos-black?style=for-the-badge&logo=github)](https://github.com/mechmind-dwv)
 [![Twitter](https://img.shields.io/badge/Twitter-Síguenos-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/mechmind-dwv)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conecta-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/mechmind-dwv)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conecta-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/MechMind IA)
 
 ---
 
