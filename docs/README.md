@@ -37,7 +37,7 @@ Este no es un proyecto cualquiera. Es una **MÁQUINA DE GUERRA DIGITAL** que:
 
 ```bash
 # Paso 1: Clona este pedazo de arte
-git clone https://github.com/tu-usuario/proyecto-galactico.git
+git clone https://github.com/mechmind-dwv/proyecto-galactico.git
 
 # Paso 2: Entra al reino
 cd proyecto-galactico
@@ -142,7 +142,7 @@ npm run god-mode --unleash-chaos
 ¿Encontraste un bug? ¿Tienes una idea que cambiaría el mundo?
 
 - 🐛 **Issues**: [Reporta bugs aquí](https://github.com/tu-repo/issues)
-- 💡 **Ideas**: [Comparte tu genialidad](https://github.com/tu-repo/discussions)
+- 💡 **Ideas**: [Comparte tu genialidad](https://github.com/mechmin-dwv/proyecto-galactico/discussions)
 - 📧 **Email**: desarrollo.galactico@universo.com
 - 🐦 **Twitter**: [@ProyectoGalactico](https://twitter.com/ejemplo)
 
@@ -170,15 +170,15 @@ Este proyecto está bajo la licencia MIT - mira el archivo [LICENSE](LICENSE) pa
 
 ## 🌟 **¡DALE UNA ESTRELLA SI TE VOLÓ LA MENTE!** 🌟
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tu-usuario/proyecto-galactico&type=Date)](https://star-history.com/#tu-usuario/proyecto-galactico&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mechmind-dwv/proyecto-galactico&type=Date)](https://star-history.com/#mechmind-dwv/proyecto-galactico&Date)
 
 ### 💖 **Hecho con amor, café, y pura magia** ✨
 
 **¿Te gustó este proyecto? ¡Compártelo con el mundo!**
 
-[![GitHub](https://img.shields.io/badge/GitHub-Síguenos-black?style=for-the-badge&logo=github)](https://github.com/tu-usuario)
-[![Twitter](https://img.shields.io/badge/Twitter-Síguenos-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/tu-usuario)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conecta-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/tu-usuario)
+[![GitHub](https://img.shields.io/badge/GitHub-Síguenos-black?style=for-the-badge&logo=github)](https://github.com/mwchmind-dwv)
+[![Twitter](https://img.shields.io/badge/Twitter-Síguenos-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/mechmind-dwv)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conecta-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/mechmind-dwv)
 
 ---
 
