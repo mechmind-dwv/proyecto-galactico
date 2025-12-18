@@ -177,7 +177,7 @@ Este proyecto está bajo la licencia MIT - mira el archivo [LICENSE](LICENSE) pa
 **¿Te gustó este proyecto? ¡Compártelo con el mundo!**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Síguenos-black?style=for-the-badge&logo=github)](https://github.com/mechmind-dwv)
-[![Twitter](https://img.shields.io/badge/Twitter-Síguenos-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/mechmind-dwv)
+[![Twitter](https://img.shields.io/badge/Twitter-Síguenos-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/IAMechMind)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conecta-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/mechmind-ia-b17170398)
 
 ---
